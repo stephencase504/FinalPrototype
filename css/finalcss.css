@@ -1,0 +1,209 @@
+body {
+  background-color: #dbdfe2;
+  font-family: "reross-quadratic", sans-serif;
+  color: black;
+  font-size: 24pt;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60pt;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 36pt;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(8, auto); /* Increase the number of rows to 8 */
+  justify-content: center;
+  gap: 1em;
+}
+
+.row1,
+.row4,
+.row5,
+.row6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+/* Center the content of each row */
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Add spacing between each external link and CTA */
+.row8 a,
+.row2 a {
+  margin: 1em;
+  align-items: center;
+}
+
+.carousel {
+  width: 700px; /* Fixed width */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.paragraph-text {
+  margin-right: 8.25em;
+  margin-left: 6.5em;
+  margin-top: -10em;
+  white-space: nowrap;
+}
+
+.carousel-caption {
+  font-size: 12pt;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  margin: -3em;
+  margin-left: -10em;
+  margin-right: -10em;
+}
+
+.carousel-inner img {
+  width: 700px; /* Fixed width */
+  height: 700px; /* Fixed height */
+  object-fit: contain; /* Prevent stretching */
+}
+
+.carousel-indicators img {
+  width: 70px;
+  display: block;
+}
+.carousel-indicators button {
+  width: max-content !important;
+}
+.carousel-indicators {
+  position: unset;
+}
+
+.tile {
+  width: 400px; /* adjust as needed */
+  height: 400px; /* adjust as needed */
+  background-size: cover;
+  background-position: center;
+  margin-top: 3em;
+  transition: transform 0.2s; /* Animation */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.tile:hover {
+  transform: scale(1.1); /* Zoom in */
+}
+
+.row1 {
+  background-color: #d93831;
+  color: white;
+  padding: 2em;
+}
+
+.row1 h1 {
+  margin-right: 500px; /* Add space to the right of the h1 */
+}
+
+.gradphoto {
+  height: 700px;
+  width: 700px;
+  margin: -64px;
+}
+
+.row2 {
+  color: #d93831;
+  padding: 2em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: -1em;
+}
+
+.row2 a {
+  display: inline-block;
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the button round */
+  width: 200px; /* Width of the button */
+  height: 200px; /* Height of the button */
+  line-height: 200px; /* Vertically center the text */
+  margin-right: 100px; /* Add some space between the buttons */
+}
+
+.row2 a.cta1 {
+  background-color: #ebbf47; /* Yellow */
+  color: #000000;
+  /* rest of your styles... */
+}
+
+.row2 a.cta2 {
+  background-color: #d93831; /* Red */
+  /* rest of your styles... */
+}
+
+.row2 a.cta3 {
+  background-color: #2459a5; /* Blue */
+  /* rest of your styles... */
+}
+
+.row2 a.cta4 {
+  background-color: #000000; /* Black */
+  margin-right: 0px;
+  /* rest of your styles... */
+}
+
+.row2 nav {
+  display: flex;
+  justify-content: center;
+}
+
+.row7 {
+  margin-top: 1em;
+}
+
+.row8 {
+  background: #2459a5;
+  color: #d93831;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+#myBtn {
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%; /* Make the button round */
+  background-color: #555555; /* Background color */
+  width: 200px; /* Width of the button */
+  height: 200px; /* Height of the button */
+  line-height: 50px; /* Vertically center the text */
+}
+
+.row8 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* CSS rules for smartphones */
+@media (max-width: 600px) {
+  .row1 img {
+    width: 50%; /* Adjust as needed */
+    height: auto;
+  }
+}
+
+/* CSS rules for desktop screens */
+@media (min-width: 601px) {
+  .row1 img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+}
